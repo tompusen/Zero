@@ -1,4 +1,12 @@
 # 大模型防护框架——ZERO
 ZERO是由一个模型和静态正则扫描器共同组成的防护栅栏，可以有效的过滤违规的提示词，解决提示注入、越狱攻击等问题。
+# 数据对比结果
+模型	Accuracy	Precision	Recall	F1-Score	参数量	模型大小
+Zero	0.9052	0.9694	0.8999	0.9334	0.32B	1.2G
+JoySafety_bert_20250916	0.5774	0.971	0.4405	0.6061	0.1B	0.39G
+Qwen3Guard0.6B	0.8913	0.9816	0.869	0.9219	0.6B	1.52G
+Qwen3Guard4B	0.8826	0.9905	0.8491	0.9144	4B	8.84G
+Qwen3Guard8B	0.8635	0.9919	0.8218	0.8989	8B	16.4G
+
 # 模型下载
 前往Hugging Fac：https://huggingface.co/ZhouYuanHang/Zero/tree/main
